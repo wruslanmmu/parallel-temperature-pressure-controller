@@ -1,0 +1,197 @@
+$ date
+Sat 13 Mar 2021 03:23:58 PM +08
+
+$ uname -a
+Linux HPEliteBook8470p-Ub2004-rt38 5.4.66-rt38 #1 SMP PREEMPT_RT 
+Sat Sep 26 16:51:59 +08 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+$ lsb_release -a
+LSB Version:    core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.2 LTS
+Release:        20.04
+Codename:       focal
+$ 
+
+COMPILATION
+===========================================================
+gprbuild -d -P/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr -s -k
+Compile
+   [Ada]          main_parallel_temp_press_controller.adb
+   [Ada]          pkg_ada_datetime_stamp.adb
+   [Ada]          pkg_controller_data_types.ads
+   [Ada]          pkg_controller_io.adb
+   [Ada]          pkg_ada_random_numbers.adb
+Bind
+   [gprbind]      main_parallel_temp_press_controller.bexch
+   [Ada]          main_parallel_temp_press_controller.ali
+Link
+   [link]         main_parallel_temp_press_controller.adb
+[2021-03-13 15:14:59] process terminated successfully, elapsed time: 01.35s
+
+EXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 07:16:01.63422816529 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 07:16:01.63422836879 Run read_temp_fromSensor    (CDU1_T001,  3.66006E+02)
+2021-03-13 07:16:01.63422852417 Run display_temp_toMonitor  (CDU1_T001,  3.66006E+02)
+2021-03-13 07:16:01.63422865753 Run write_temp_toActuator   (CDU1_T001, OFF)
+2021-03-13 07:16:01.63422879548 Run read_press_fromSensor   (CDU1_P001,  558)
+2021-03-13 07:16:01.63422891201 Run display_press_toMonitor (CDU1_P001,  558)
+2021-03-13 07:16:01.63422902108 Run write_press_toActuator  (CDU1_P001,  9)
+2021-03-13 07:16:01.63422914700 Run read_temp_fromSensor    (CDU1_F001,  2.22708E+03)
+2021-03-13 07:16:01.63422924610 Run display_flow_toMonitor  (CDU1_F001,  2.22708E+03)
+2021-03-13 07:16:01.63422935064 Run write_flow_toActuator   (CDU1_F001,  80)
+
+2021-03-13 07:16:01.63422947649 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 15:16:01] process terminated successfully, elapsed time: 00.19s
+
+RE-EXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 07:17:15.70490106920 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 07:17:15.70490127082 Run read_temp_fromSensor    (CDU1_T001,  3.86479E+02)
+2021-03-13 07:17:15.70490141642 Run display_temp_toMonitor  (CDU1_T001,  3.86479E+02)
+2021-03-13 07:17:15.70490150096 Run write_temp_toActuator   (CDU1_T001, OFF)
+2021-03-13 07:17:15.70490159277 Run read_press_fromSensor   (CDU1_P001,  310)
+2021-03-13 07:17:15.70490165228 Run display_press_toMonitor (CDU1_P001,  310)
+2021-03-13 07:17:15.70490172844 Run write_press_toActuator  (CDU1_P001,  6)
+2021-03-13 07:17:15.70490182863 Run read_temp_fromSensor    (CDU1_F001,  2.17535E+03)
+2021-03-13 07:17:15.70490189736 Run display_flow_toMonitor  (CDU1_F001,  2.17535E+03)
+2021-03-13 07:17:15.70490196461 Run write_flow_toActuator   (CDU1_F001,  80)
+
+2021-03-13 07:17:15.70490204880 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 15:17:15] process terminated successfully, elapsed time: 00.19s
+
+RE-EXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 07:17:50.87668556375 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 07:17:50.87668590828 Run read_temp_fromSensor    (CDU1_T001,  8.81126E+01)
+2021-03-13 07:17:50.87668605921 Run display_temp_toMonitor  (CDU1_T001,  8.81126E+01)
+2021-03-13 07:17:50.87668618500 Run write_temp_toActuator   (CDU1_T001, ON)
+2021-03-13 07:17:50.87668632164 Run read_press_fromSensor   (CDU1_P001,  155)
+2021-03-13 07:17:50.87668644156 Run display_press_toMonitor (CDU1_P001,  155)
+2021-03-13 07:17:50.87668653601 Run write_press_toActuator  (CDU1_P001,  3)
+2021-03-13 07:17:50.87668666485 Run read_temp_fromSensor    (CDU1_F001,  2.04316E+03)
+2021-03-13 07:17:50.87668677374 Run display_flow_toMonitor  (CDU1_F001,  2.04316E+03)
+2021-03-13 07:17:50.87668687383 Run write_flow_toActuator   (CDU1_F001,  80)
+
+2021-03-13 07:17:50.87668700689 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 15:17:50] process terminated successfully, elapsed time: 00.19s
+
+RE-EXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 07:18:32.43227936373 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 07:18:32.43227955138 Run read_temp_fromSensor    (CDU1_T001,  7.78102E+01)
+2021-03-13 07:18:32.43227966267 Run display_temp_toMonitor  (CDU1_T001,  7.78102E+01)
+2021-03-13 07:18:32.43227978921 Run write_temp_toActuator   (CDU1_T001, ON)
+2021-03-13 07:18:32.43227992158 Run read_press_fromSensor   (CDU1_P001,  255)
+2021-03-13 07:18:32.43228004643 Run display_press_toMonitor (CDU1_P001,  255)
+2021-03-13 07:18:32.43228013956 Run write_press_toActuator  (CDU1_P001,  6)
+2021-03-13 07:18:32.43228026659 Run read_temp_fromSensor    (CDU1_F001,  1.67509E+03)
+2021-03-13 07:18:32.43228037018 Run display_flow_toMonitor  (CDU1_F001,  1.67509E+03)
+2021-03-13 07:18:32.43228046738 Run write_flow_toActuator   (CDU1_F001,  50)
+
+2021-03-13 07:18:32.43228059257 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 15:18:32] process terminated successfully, elapsed time: 00.19s
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu$ cd parallel-temperature-pressure-controller/
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/parallel-temperature-pressure-controller$ ls -al
+total 44
+drwxrwxr-x 9 wruslan wruslan 4096 Mar 13 05:42 .
+drwxrwxr-x 4 wruslan wruslan 4096 Mar 12 17:47 ..
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 13 15:19 docs
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 13 15:14 exec
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 12 17:49 figures
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 12 17:49 files
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 13 15:14 .git
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 13 15:14 obj
+-rw-rw-r-- 1 wruslan wruslan 1027 Mar 13 05:42 parallel_temp_press_controller.gpr
+-rw-rw-r-- 1 wruslan wruslan  104 Mar 12 17:47 README.md
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 13 14:50 src
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/parallel-temperature-pressure-controller$ 
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/parallel-temperature-pressure-controller$ tree ./
+./
+├── docs
+│   ├── session-01-setup.txt
+│   ├── session-02.txt
+│   └── session-03.txt
+├── exec
+│   └── main_parallel_temp_press_controller.adx
+├── figures
+│   └── guess-who-5993372.jpeg
+├── files
+│   └── session-03.txt
+├── obj
+│   ├── b__main_parallel_temp_press_controller.adb
+│   ├── b__main_parallel_temp_press_controller.ads
+│   ├── b__main_parallel_temp_press_controller.ali
+│   ├── b__main_parallel_temp_press_controller.o
+│   ├── gpsauto.cgpr
+│   ├── main_parallel_temp_press_controller.adb.stderr
+│   ├── main_parallel_temp_press_controller.adb.stdout
+│   ├── main_parallel_temp_press_controller.ali
+│   ├── main_parallel_temp_press_controller.bexch
+│   ├── main_parallel_temp_press_controller.cswi
+│   ├── main_parallel_temp_press_controller.o
+│   ├── parallel_temp_press_controller-loc.xml
+│   ├── pkg_ada_datetime_stamp.adb.stderr
+│   ├── pkg_ada_datetime_stamp.adb.stdout
+│   ├── pkg_ada_datetime_stamp.ali
+│   ├── pkg_ada_datetime_stamp.cswi
+│   ├── pkg_ada_datetime_stamp.o
+│   ├── pkg_ada_random_numbers.adb.stderr
+│   ├── pkg_ada_random_numbers.adb.stdout
+│   ├── pkg_ada_random_numbers.ali
+│   ├── pkg_ada_random_numbers.cswi
+│   ├── pkg_ada_random_numbers.o
+│   ├── pkg_controller_data_types.adb.stderr
+│   ├── pkg_controller_data_types.adb.stdout
+│   ├── pkg_controller_data_types.ads.stderr
+│   ├── pkg_controller_data_types.ads.stdout
+│   ├── pkg_controller_data_types.ali
+│   ├── pkg_controller_data_types.cswi
+│   ├── pkg_controller_data_types.o
+│   ├── pkg_controller_io.adb.stderr
+│   ├── pkg_controller_io.adb.stdout
+│   ├── pkg_controller_io.ali
+│   ├── pkg_controller_io.cswi
+│   └── pkg_controller_io.o
+├── parallel_temp_press_controller.gpr
+├── README.md
+└── src
+    ├── main_parallel_temp_press_controller.adb
+    ├── pkg-ada-datetime-stamp
+    │   ├── pkg_ada_datetime_stamp.adb
+    │   └── pkg_ada_datetime_stamp.ads
+    ├── pkg-ada-random-numbers
+    │   ├── pkg_ada_random_numbers.adb
+    │   └── pkg_ada_random_numbers.ads
+    ├── pkg-controller-data-types
+    │   └── pkg_controller_data_types.ads
+    ├── pkg-controller-io
+    │   ├── pkg_controller_io.adb
+    │   └── pkg_controller_io.ads
+    ├── pkg-controller-procedures
+    │   ├── pkg_controller_procedures.adb
+    │   └── pkg_controller_procedures.ads
+    └── pkg-controller-processes
+        ├── pkg_controller_processes.adb
+        └── pkg_controller_processes.ads
+
+12 directories, 54 files
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/parallel-temperature-pressure-controller$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+

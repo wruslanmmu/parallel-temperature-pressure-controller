@@ -1,0 +1,122 @@
+CLEAN ALL
+===========================================================
+gprclean -r -P/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr -c -f
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_io.o" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_io.ali" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_io.cswi" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_io.adb.stdout" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_io.adb.stderr" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_random_numbers.o" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_random_numbers.ali" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_random_numbers.cswi" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_random_numbers.adb.stdout" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_random_numbers.adb.stderr" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_datetime_stamp.o" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_datetime_stamp.ali" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_datetime_stamp.cswi" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_datetime_stamp.adb.stdout" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_datetime_stamp.adb.stderr" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_data_types.o" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_data_types.ali" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_data_types.cswi" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_data_types.ads.stdout" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_data_types.ads.stderr" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/main_parallel_temp_press_controller.o" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/main_parallel_temp_press_controller.ali" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/main_parallel_temp_press_controller.cswi" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/main_parallel_temp_press_controller.adb.stdout" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/main_parallel_temp_press_controller.adb.stderr" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/b__main_parallel_temp_press_controller.o" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/b__main_parallel_temp_press_controller.ads" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/b__main_parallel_temp_press_controller.adb" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/b__main_parallel_temp_press_controller.ali" has been deleted
+"/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/main_parallel_temp_press_controller.bexch" has been deleted
+[2021-03-13 12:57:21] process terminated successfully, elapsed time: 00.75s
+
+BUILD ALL
+===========================================================
+gprbuild -d -P/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr -s -k
+Compile
+   [Ada]          main_parallel_temp_press_controller.adb
+   [Ada]          pkg_ada_datetime_stamp.adb
+   [Ada]          pkg_controller_data_types.ads
+   [Ada]          pkg_controller_io.adb
+   [Ada]          pkg_ada_random_numbers.adb
+Bind
+   [gprbind]      main_parallel_temp_press_controller.bexch
+   [Ada]          main_parallel_temp_press_controller.ali
+Link
+   [link]         main_parallel_temp_press_controller.adb
+[2021-03-13 12:58:31] process terminated successfully, elapsed time: 01.34s
+
+EXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 04:43:46.04387692882 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 04:43:46.04387734508 Run read_temperature  (CDU1_T01,  3.54549E+02)
+2021-03-13 04:43:46.04387756416 Run write_temperature (CDU1_T01, OFF)           <-- OFF (cur_TRead_sensor > 300.0) 
+2021-03-13 04:43:46.04387772681 Run read_pressure  (CDU1_P01,  631)
+2021-03-13 04:43:46.04387784138 Run write_pressure (CDU1_P01,  9)               <-- 9   (cur_PRead_sensor = (501..750))
+
+2021-03-13 04:43:46.04387798023 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 12:43:46] process terminated successfully, elapsed time: 00.19s
+
+RE-EXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 04:44:19.64989207573 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 04:44:19.64989241563 Run read_temperature  (CDU1_T01,  2.41535E+02)
+2021-03-13 04:44:19.64989257504 Run write_temperature (CDU1_T01, ON)            <-- ON  (cur_TRead_sensor < 300.0)
+2021-03-13 04:44:19.64989265339 Run read_pressure  (CDU1_P01,  527)
+2021-03-13 04:44:19.64989270745 Run write_pressure (CDU1_P01,  9)               <-- 9   (cur_PRead_sensor = (501..750))
+
+2021-03-13 04:44:19.64989276304 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 12:44:19] process terminated successfully, elapsed time: 00.19s
+
+REXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 04:45:05.52867838333 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 04:45:05.52867873674 Run read_temperature  (CDU1_T01,  4.14787E+02)
+2021-03-13 04:45:05.52867888825 Run write_temperature (CDU1_T01, OFF)           <-- OFF (cur_TRead_sensor > 300.0) 
+2021-03-13 04:45:05.52867902231 Run read_pressure  (CDU1_P01,  426)
+2021-03-13 04:45:05.52867913665 Run write_pressure (CDU1_P01,  6)               <-- 6   (cur_PRead_sensor = (251..500))
+
+2021-03-13 04:45:05.52867926293 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 12:45:05] process terminated successfully, elapsed time: 00.19s
+
+RE-EXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 04:53:58.32667573682 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 04:53:58.32667595632 Run read_temperature  (CDU1_T01,  4.36567E+02)
+2021-03-13 04:53:58.32667608824 Run write_temperature (CDU1_T01, OFF)           <-- OFF (cur_TRead_sensor > 300.0) 
+2021-03-13 04:53:58.32667621094 Run read_pressure  (CDU1_P01,  84)
+2021-03-13 04:53:58.32667628375 Run write_pressure (CDU1_P01,  3)               <-- 3   (cur_PRead_sensor = (0..250))
+
+2021-03-13 04:53:58.32667637301 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 12:53:58] process terminated successfully, elapsed time: 00.19s
+
+RE-EXECUTION
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 04:59:18.08434418913 STARTED: main Bismillah 3 times WRY
+
+2021-03-13 04:59:18.08434456376 Run read_temperature  (CDU1_T01,  4.52065E+02)
+2021-03-13 04:59:18.08434475840 Run write_temperature (CDU1_T01, OFF)
+2021-03-13 04:59:18.08434492500 Run read_pressure  (CDU1_P01,  472)
+2021-03-13 04:59:18.08434533254 Run write_pressure (CDU1_P01,  6)
+
+2021-03-13 04:59:18.08434548409 ENDED: main Alhamdulillah 3 times WRY
+[2021-03-13 12:59:18] process terminated successfully, elapsed time: 00.19s
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+
+
+

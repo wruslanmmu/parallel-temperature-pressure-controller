@@ -1,0 +1,114 @@
+V "GNAT Lib v9"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main_parallel_temp_press_controller%b  main_parallel_temp_press_controller.adb  be063d4e NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_ada_datetime_stamp%s  pkg_ada_datetime_stamp.adb  pkg_ada_datetime_stamp.ali
+W pkg_controller_data_types%s  pkg_controller_data_types.ads  pkg_controller_data_types.ali
+W pkg_controller_io%s	pkg_controller_io.adb	pkg_controller_io.ali
+
+D ada.ads		20200312110721 76789da1 ada%s
+D a-charac.ads		20200312110721 2d3ec45b ada.characters%s
+D a-chlat1.ads		20200312110721 66457d31 ada.characters.latin_1%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-finali.ads		20200312110721 bf4f806b ada.finalization%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20200312110721 0240fc73 ada.real_time%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-string.ads		20200312110721 90ac6797 ada.strings%s
+D a-strmap.ads		20200312110721 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20200312110721 8098c91f ada.strings.unbounded%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-c.ads		20200312110721 5421119b interfaces.c%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D main_parallel_temp_press_controller.adb  20210313065025 79319483 main_parallel_temp_press_controller%b
+D pkg_ada_datetime_stamp.ads  20210311234805 30e90943 pkg_ada_datetime_stamp%s
+D pkg_controller_data_types.ads  20210313055824 1abd7817 pkg_controller_data_types%s
+D pkg_controller_io.ads	20210313070551 657e6bc3 pkg_controller_io%s
+D system.ads		20200312110721 4635ec04 system%s
+D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
+D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
+D s-linux.ads		20200312110721 ed0b8aee system.linux%s
+D s-multip.ads		20200312110721 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20200808120453 0b994636 system.os_constants%s
+D s-osinte.ads		20200312110721 710cf8c6 system.os_interface%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stausa.ads		20200312110721 017a0a05 system.stack_usage%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200312110721 b16154c2 system.storage_pools%s
+D s-stposu.ads		20200312110721 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20200312110721 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20200312110721 2b3f8252 system.task_info%s
+D s-taspri.ads		20200312110721 f40ac08d system.task_primitives%s
+D s-taprop.ads		20200312110721 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20200312110721 b9d612e2 system.tasking%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 18|8r6 8r25 22r27
+X 13 a-textio.ads
+49K13*Text_IO 471e16 18|8w10 8r29 22r31
+166U14*New_Line 18|42s9 63s9
+263U14*Put_Line 18|41s9 65s9
+X 18 main_parallel_temp_press_controller.adb
+17U11*main_parallel_temp_press_controller 17b11 67l5 67t40
+22K12 ATIO=22:31 41r4 42r4 63r4 65r4
+25K12 PADTS=25:27 40r4 64r4
+26K12 PCDT=26:27 30r16 31r16 32r16 34r19 35r19 36r19
+27K12 PCIO=27:27 46r4 47r4 48r4 51r4 52r4 53r4 56r4 57r4 58r4
+30f4 out_TRead{20|19F9} 46m47 47m47
+31i4 out_PRead{20|20I9} 51m47 52m47
+32f4 out_FRead{20|21F9} 56m47 57m47
+34e4 out_TSetting{20|23E9} 48m47
+35i4 out_PSetting{20|24I9} 53m47
+36i4 out_FSetting{20|25I9} 58m47
+X 19 pkg_ada_datetime_stamp.ads
+10K9*pkg_ada_datetime_stamp 18|12w6 25r27 19|26e27
+21U14*dtstamp 18|40s10 64s10
+X 20 pkg_controller_data_types.ads
+11K9*pkg_controller_data_types 18|13w6 26r27 20|32e30
+19F9*temp_reading<float> 18|30r21
+20I9*press_reading<integer> 18|31r21
+21F9*flow_reading<float> 18|32r21
+23E9*heater_setting 18|34r24 20|23e36
+24I9*press_setting<integer> 18|35r24
+25I9*flow_setting<integer> 18|36r24
+X 21 pkg_controller_io.ads
+12K9*pkg_controller_io 18|14w6 27r27 21|34e22
+19U14*read_temp_fromSensor 18|46s9
+20U14*display_temp_toMonitor 18|47s9
+21U14*write_temp_toActuator 18|48s9
+24U14*read_press_fromSensor 18|51s9
+25U14*display_press_toMonitor 18|52s9
+26U14*write_press_toActuator 18|53s9
+29U14*read_flow_fromSensor 18|56s9
+30U14*display_flow_toMonitor 18|57s9
+31U14*write_flow_toActuator 18|58s9
+X 38 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

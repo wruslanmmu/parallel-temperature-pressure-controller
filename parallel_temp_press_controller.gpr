@@ -1,0 +1,28 @@
+-- File	 : parallel_temp_press_controller.gpr
+-- Date	 : Sat 13 Mar 2021 05:41:53 AM +08
+-- Author: wruslandr@gmail.com
+
+-- ========================================================
+project parallel_temp_press_controller
+-- ========================================================
+is
+   for Languages   use ("Ada");
+   for Source_Dirs use ("src/**"); -- Covers every subdirectory in src
+   for Object_Dir  use "obj";      -- NOTE: No parantheses
+   for Exec_Dir    use "exec";     -- NOTE: No parantheses
+   
+   for Main      use ("main_parallel_temp_press_controller.adb");  
+   package Builder is
+      for Executable ("main_parallel_temp_press_controller.adb") 
+                  use "main_parallel_temp_press_controller.adx";
+   end Builder;
+   
+   package Naming is
+      for Spec_Suffix ("ada") use ".ads";
+      for Body_Suffix ("ada") use ".adb";
+   end Naming;
+
+-- ========================================================
+end parallel_temp_press_controller;
+-- ========================================================
+

@@ -1,0 +1,81 @@
+File: session-01-setup.txt
+
+===========================================================
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ date
+Fri 12 Mar 2021 05:50:01 PM +08
+
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ uname -a
+Linux HPEliteBook8470p-Ub2004-rt38 5.4.66-rt38 #1 SMP PREEMPT_RT 
+Sat Sep 26 16:51:59 +08 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ 
+
+===========================================================
+rt38:~/github-mmu$ git clone https://github.com/wruslanmmu/parallel-temperature-pressure-controller.git
+Cloning into 'parallel-temperature-pressure-controller'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 652 bytes | 652.00 KiB/s, done.
+rt38:~/github-mmu$ 
+
+===========================================================
+rt38:~/github-mmu$ ls -al
+total 20
+drwxrwxr-x  5 wruslan wruslan 4096 Mar 12 17:47 .
+drwxr-xr-x 75 wruslan wruslan 4096 Mar 12 17:22 ..
+drwxrwxr-x  3 wruslan wruslan 4096 Mar 12 17:47 parallel-temperature-pressure-controller
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 12 17:22 photos
+rt38:~/github-mmu$ 
+
+===========================================================
+rt38:~/github-mmu$ cd parallel-temperature-pressure-controller/
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ ls -al
+total 16
+drwxrwxr-x 3 wruslan wruslan 4096 Mar 12 17:47 .
+drwxrwxr-x 4 wruslan wruslan 4096 Mar 12 17:47 ..
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 12 17:47 .git
+-rw-rw-r-- 1 wruslan wruslan  104 Mar 12 17:47 README.md
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ 
+
+===========================================================
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ mkdir scr
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ mkdir obj
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ mkdir exec
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ mkdir docs
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ mkdir files
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ mkdir figures
+rt38:~/github-mmu/parallel-temperature-pressure-controller$
+
+=========================================================== 
+rt38:~/github-mmu/parallel-temperature-pressure-controller$ ls -al
+total 40
+drwxrwxr-x 9 wruslan wruslan 4096 Mar 12 17:49 .
+drwxrwxr-x 4 wruslan wruslan 4096 Mar 12 17:47 ..
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 12 17:48 docs
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 12 17:48 exec
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 12 17:49 figures
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 12 17:49 files
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 12 17:47 .git
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 12 17:48 obj
+-rw-rw-r-- 1 wruslan wruslan  104 Mar 12 17:47 README.md
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 12 17:48 scr
+rt38:~/github-mmu/parallel-temperature-pressure-controller$
+
+=========================================================== 
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+this a testofthe new arabic 
+1234567890-=
+qwertyuiop
+asdfghjkl\
+zxcvbnm,./
+
+

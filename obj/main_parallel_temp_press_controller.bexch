@@ -1,0 +1,29 @@
+[GENERATED OBJECT FILE]
+b__main_parallel_temp_press_controller.o
+[PROJECT FILES]
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr
+20210312214223
+[BOUND OBJECT FILES]
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_datetime_stamp.o
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_random_numbers.o
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_data_types.o
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_io.o
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/main_parallel_temp_press_controller.o
+[GENERATED SOURCE FILES]
+b__main_parallel_temp_press_controller.ads
+b__main_parallel_temp_press_controller.adb
+b__main_parallel_temp_press_controller.ali
+[RESULTING OPTIONS]
+-L/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/
+-L/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+-shared
+-shared-libgcc
+-lgnarl-9
+-lgnat-9
+-lpthread
+-lrt
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+/usr/lib

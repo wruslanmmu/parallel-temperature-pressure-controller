@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<Locations>
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/main_parallel_temp_press_controller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-data-types/pkg_controller_data_types.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 48" line=" 4" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-data-types/pkg_controller_data_types.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-io/pkg_controller_io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-data-types/pkg_controller_data_types.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 20" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-io/pkg_controller_io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-procedures/pkg_controller_procedures.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 22" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-procedures/pkg_controller_procedures.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-processes/pkg_controller_processes.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 48" line=" 4" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-processes/pkg_controller_processes.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-processes/pkg_controller_processes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 42" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-processes/pkg_controller_processes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 33" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-processes/pkg_controller_processes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 23" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/main_parallel_temp_press_controller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-processes/pkg_controller_processes.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 19" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-processes/pkg_controller_processes.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-processes/pkg_controller_processes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-io/pkg_controller_io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 2" line=" 39" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-io/pkg_controller_io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-io/pkg_controller_io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 41" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/main_parallel_temp_press_controller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 19" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-data-types/pkg_controller_data_types.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 41" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/main_parallel_temp_press_controller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 80" line=" 23" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-io/pkg_controller_io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 41" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/main_parallel_temp_press_controller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 30" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/main_parallel_temp_press_controller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 2" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-data-types/pkg_controller_data_types.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/parallel_temp_press_controller.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-mmu/parallel-temperature-pressure-controller/src/pkg-controller-data-types/pkg_controller_data_types.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
