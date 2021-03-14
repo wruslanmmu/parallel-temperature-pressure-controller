@@ -1,0 +1,182 @@
+Task No. 1 - tsk_Temperature_Controller_Loop 
+=================================================
+PCIO.read_temp_fromSensor   (TagID, TRead);  -- From hardware 
+PCPA.exec_temp_conversion   (TagID, TRead, TSet); -- Calculations
+PCIO.write_temp_toActuator  (TagID, TSet);   -- To hardware
+PCIO.display_temp_toMonitor (TagID, TRead);  -- To hardware
+
+Task No. 2 - tsk_Pressure_Controller_Loop 
+=================================================
+PCIO.read_press_fromSensor   (TagID, PRead);  -- From hardware
+PCPA.exec_press_conversion   (TagID, PRead, PSet); -- Calculations
+PCIO.write_press_toActuator  (TagID, PSet);   -- To hardware
+PCIO.display_press_toMonitor (TagID, PRead);  -- To hardware
+
+Task No. 3 - tsk_Pressure_Controller_Loop 
+=================================================
+PCIO.read_flow_fromSensor   (TagID, FRead);  -- From hardware
+PCPA.exec_flow_conversion   (TagID, FRead, FSet); -- Calculations
+PCIO.write_flow_toActuator  (TagID, FSet);   -- To hardware
+PCIO.display_flow_toMonitor (TagID, FRead);  -- To hardware
+
+
+=======================================================
+
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-14 01:29:42.21403636257 STARTED: main Bismillah 3 times WRY
+
+2021-03-14 01:29:42.21403930419 TASK FLOW  LOOPNO:  1 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.21403956730 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  2.08554E+03)
+2021-03-14 01:29:42.21403995399 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  2.08554E+03,  80)
+2021-03-14 01:29:42.21404103015 TASK TEMP  LOOPNO:  1 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:42.21404026290 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  80)
+2021-03-14 01:29:42.21404067537 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  2.08554E+03)
+2021-03-14 01:29:42.21404135791 TASK PRESS LOOPNO:  1 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.21404172668 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  3.68211E+02)
+2021-03-14 01:29:42.21404203230 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  3.68211E+02,  1.88888E+01)
+2021-03-14 01:29:42.21404229204 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.88888E+01)
+2021-03-14 01:29:42.21404216236 RUN: PRESS read_press_fromSensor     (CDU1_P001,  168)
+2021-03-14 01:29:42.21404244789 RUN: PRESS exec_press_conversion     (CDU1_P001,  168,  3)
+2021-03-14 01:29:42.21404260018 RUN: PRESS write_pressure_toActuator (CDU1_P001,  3)
+2021-03-14 01:29:42.21404273909 RUN: PRESS display_press_toMonitor   (CDU1_P001,  168)
+2021-03-14 01:29:42.21404299002 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  3.68211E+02)
+2021-03-14 01:29:42.26454192966 TASK PRESS LOOPNO:  2 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.26454228978 RUN: PRESS read_press_fromSensor     (CDU1_P001,  307)
+2021-03-14 01:29:42.26454256170 RUN: PRESS exec_press_conversion     (CDU1_P001,  307,  6)
+2021-03-14 01:29:42.26454283284 RUN: PRESS write_pressure_toActuator (CDU1_P001,  6)
+2021-03-14 01:29:42.26454311682 RUN: PRESS display_press_toMonitor   (CDU1_P001,  307)
+2021-03-14 01:29:42.28474077091 TASK FLOW  LOOPNO:  2 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.28474128854 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  2.35687E+03)
+2021-03-14 01:29:42.28474165962 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  2.35687E+03,  80)
+2021-03-14 01:29:42.28474200909 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  80)
+2021-03-14 01:29:42.28474235274 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  2.35687E+03)
+2021-03-14 01:29:42.31504156731 TASK PRESS LOOPNO:  3 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.31504203209 TASK TEMP  LOOPNO:  2 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:42.31504241467 RUN: PRESS exec_press_conversion     (CDU1_P001,  547,  9)
+2021-03-14 01:29:42.31504257904 RUN: PRESS read_press_fromSensor     (CDU1_P001,  547)
+2021-03-14 01:29:42.31504276104 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  2.30948E+02)
+2021-03-14 01:29:42.31504301665 RUN: PRESS write_pressure_toActuator (CDU1_P001,  9)
+2021-03-14 01:29:42.31504317604 RUN: PRESS display_press_toMonitor   (CDU1_P001,  547)
+2021-03-14 01:29:42.31504334008 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  2.30948E+02,  1.55555E+01)
+2021-03-14 01:29:42.31504347908 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.55555E+01)
+2021-03-14 01:29:42.31504360330 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  2.30948E+02)
+2021-03-14 01:29:42.35544097762 TASK FLOW  LOOPNO:  3 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.35544155354 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  1.76865E+03)
+2021-03-14 01:29:42.35544194905 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  1.76865E+03,  50)
+2021-03-14 01:29:42.35544233536 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  50)
+2021-03-14 01:29:42.35544274593 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  1.76865E+03)
+2021-03-14 01:29:42.36554213252 TASK PRESS LOOPNO:  4 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.36554238981 RUN: PRESS read_press_fromSensor     (CDU1_P001,  177)
+2021-03-14 01:29:42.36554256907 RUN: PRESS exec_press_conversion     (CDU1_P001,  177,  3)
+2021-03-14 01:29:42.36554293868 RUN: PRESS write_pressure_toActuator (CDU1_P001,  3)
+2021-03-14 01:29:42.36554322377 RUN: PRESS display_press_toMonitor   (CDU1_P001,  177)
+2021-03-14 01:29:42.41604176319 TASK PRESS LOOPNO:  5 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.41604153517 TASK TEMP  LOOPNO:  3 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:42.41604268957 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  2.88270E+02)
+2021-03-14 01:29:42.41604293344 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  2.88270E+02,  1.55555E+01)
+2021-03-14 01:29:42.41604319462 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.55555E+01)
+2021-03-14 01:29:42.41604355290 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  2.88270E+02)
+2021-03-14 01:29:42.41604386239 RUN: PRESS read_press_fromSensor     (CDU1_P001,  486)
+2021-03-14 01:29:42.41604407807 RUN: PRESS exec_press_conversion     (CDU1_P001,  486,  6)
+2021-03-14 01:29:42.41604421891 RUN: PRESS write_pressure_toActuator (CDU1_P001,  6)
+2021-03-14 01:29:42.41604436417 RUN: PRESS display_press_toMonitor   (CDU1_P001,  486)
+2021-03-14 01:29:42.42614106059 TASK FLOW  LOOPNO:  4 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.42614146538 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  1.67028E+03)
+2021-03-14 01:29:42.42614177772 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  1.67028E+03,  50)
+2021-03-14 01:29:42.42614204948 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  50)
+2021-03-14 01:29:42.42614229703 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  1.67028E+03)
+2021-03-14 01:29:42.46654168615 TASK PRESS LOOPNO:  6 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.46654222172 RUN: PRESS read_press_fromSensor     (CDU1_P001,  624)
+2021-03-14 01:29:42.46654259608 RUN: PRESS exec_press_conversion     (CDU1_P001,  624,  9)
+2021-03-14 01:29:42.46654286831 RUN: PRESS write_pressure_toActuator (CDU1_P001,  9)
+2021-03-14 01:29:42.46654319696 RUN: PRESS display_press_toMonitor   (CDU1_P001,  624)
+2021-03-14 01:29:42.49684093373 TASK FLOW  LOOPNO:  5 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.49684152850 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  2.40641E+03)
+2021-03-14 01:29:42.49684181376 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  2.40641E+03,  80)
+2021-03-14 01:29:42.49684212538 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  80)
+2021-03-14 01:29:42.49684250301 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  2.40641E+03)
+2021-03-14 01:29:42.51704183905 TASK TEMP  LOOPNO:  4 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:42.51704269913 TASK PRESS LOOPNO:  7 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.51704281385 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  2.69572E+02)
+2021-03-14 01:29:42.51704326435 RUN: PRESS read_press_fromSensor     (CDU1_P001,  702)
+2021-03-14 01:29:42.51704347510 RUN: PRESS exec_press_conversion     (CDU1_P001,  702,  9)
+2021-03-14 01:29:42.51704368708 RUN: PRESS write_pressure_toActuator (CDU1_P001,  9)
+2021-03-14 01:29:42.51704388386 RUN: PRESS display_press_toMonitor   (CDU1_P001,  702)
+2021-03-14 01:29:42.51704409125 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  2.69572E+02,  1.55555E+01)
+2021-03-14 01:29:42.51704428584 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.55555E+01)
+2021-03-14 01:29:42.51704482917 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  2.69572E+02)
+2021-03-14 01:29:42.56754136109 TASK FLOW  LOOPNO:  6 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.56754201001 TASK PRESS LOOPNO:  8 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.56754276577 RUN: PRESS read_press_fromSensor     (CDU1_P001,  421)
+2021-03-14 01:29:42.56754331227 RUN: PRESS exec_press_conversion     (CDU1_P001,  421,  6)
+2021-03-14 01:29:42.56754535565 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  2.38926E+03)
+2021-03-14 01:29:42.56754390784 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  2.38926E+03)
+2021-03-14 01:29:42.56754441663 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  2.38926E+03,  80)
+2021-03-14 01:29:42.56754488145 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  80)
+2021-03-14 01:29:42.56754369057 RUN: PRESS write_pressure_toActuator (CDU1_P001,  6)
+2021-03-14 01:29:42.56754582893 RUN: PRESS display_press_toMonitor   (CDU1_P001,  421)
+2021-03-14 01:29:42.61804147541 TASK TEMP  LOOPNO:  5 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:42.61804125608 TASK PRESS LOOPNO:  9 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.61804255159 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  2.42065E+02,  1.55555E+01)
+2021-03-14 01:29:42.61804225576 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  2.42065E+02)
+2021-03-14 01:29:42.61804215832 RUN: PRESS read_press_fromSensor     (CDU1_P001,  619)
+2021-03-14 01:29:42.61804286337 RUN: PRESS exec_press_conversion     (CDU1_P001,  619,  9)
+2021-03-14 01:29:42.61804315637 RUN: PRESS write_pressure_toActuator (CDU1_P001,  9)
+2021-03-14 01:29:42.61804342637 RUN: PRESS display_press_toMonitor   (CDU1_P001,  619)
+2021-03-14 01:29:42.61804382398 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.55555E+01)
+2021-03-14 01:29:42.61804402292 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  2.42065E+02)
+2021-03-14 01:29:42.63824049960 TASK FLOW  LOOPNO:  7 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.63824083359 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  1.95767E+03)
+2021-03-14 01:29:42.63824101570 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  1.95767E+03,  50)
+2021-03-14 01:29:42.63824117702 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  50)
+2021-03-14 01:29:42.63824132357 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  1.95767E+03)
+2021-03-14 01:29:42.66854218111 TASK PRESS LOOPNO:  10 =====> Running tsk_Pressure_Controller_Loop
+2021-03-14 01:29:42.66854273398 RUN: PRESS read_press_fromSensor     (CDU1_P001,  519)
+2021-03-14 01:29:42.66854298340 RUN: PRESS exec_press_conversion     (CDU1_P001,  519,  9)
+2021-03-14 01:29:42.66854324552 RUN: PRESS write_pressure_toActuator (CDU1_P001,  9)
+2021-03-14 01:29:42.66854347332 RUN: PRESS display_press_toMonitor   (CDU1_P001,  519)
+2021-03-14 01:29:42.70894113988 TASK FLOW  LOOPNO:  8 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.70894182689 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  2.23106E+03)
+2021-03-14 01:29:42.70894217572 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  2.23106E+03,  80)
+2021-03-14 01:29:42.70894252816 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  80)
+2021-03-14 01:29:42.70894282367 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  2.23106E+03)
+2021-03-14 01:29:42.71904143121 TASK TEMP  LOOPNO:  6 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:42.71904179154 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  1.86575E+02)
+2021-03-14 01:29:42.71904204269 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  1.86575E+02,  1.22222E+01)
+2021-03-14 01:29:42.71904226922 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.22222E+01)
+2021-03-14 01:29:42.71904248817 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  1.86575E+02)
+2021-03-14 01:29:42.77964095159 TASK FLOW  LOOPNO:  9 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.77964134726 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  1.88944E+03)
+2021-03-14 01:29:42.77964172188 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  1.88944E+03,  50)
+2021-03-14 01:29:42.77964201649 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  50)
+2021-03-14 01:29:42.77964231418 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  1.88944E+03)
+2021-03-14 01:29:42.81004169770 TASK TEMP  LOOPNO:  7 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:42.81004216507 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  3.97766E+02)
+2021-03-14 01:29:42.81004246054 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  3.97766E+02,  1.88888E+01)
+2021-03-14 01:29:42.81004274757 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.88888E+01)
+2021-03-14 01:29:42.81004300305 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  3.97766E+02)
+2021-03-14 01:29:42.84034128030 TASK FLOW  LOOPNO:  10 =====> Running tsk_FlowRate_Controller_Loop
+2021-03-14 01:29:42.84034175322 RUN: FLOW  read_flow_fromSensor   (CDU1_F001,  2.23744E+03)
+2021-03-14 01:29:42.84034217038 RUN: FLOW  exec_flow_conversion   (CDU1_F001,  2.23744E+03,  80)
+2021-03-14 01:29:42.84034246383 RUN: FLOW  write_flow_toActuator  (CDU1_F001,  80)
+2021-03-14 01:29:42.84034279075 RUN: FLOW  display_flow_toMonitor (CDU1_F001,  2.23744E+03)
+2021-03-14 01:29:42.91104243939 TASK TEMP  LOOPNO:  8 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:42.91104280877 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  4.88163E+02)
+2021-03-14 01:29:42.91104314086 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  4.88163E+02,  2.00000E+01)
+2021-03-14 01:29:42.91104349233 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  2.00000E+01)
+2021-03-14 01:29:42.91104377619 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  4.88163E+02)
+2021-03-14 01:29:43.01204145412 TASK TEMP  LOOPNO:  9 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:43.01204186299 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  8.21517E+01)
+2021-03-14 01:29:43.01204220230 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  8.21517E+01,  1.01111E+01)
+2021-03-14 01:29:43.01204252035 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.01111E+01)
+2021-03-14 01:29:43.01204279873 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  8.21517E+01)
+2021-03-14 01:29:43.11304175370 TASK TEMP  LOOPNO:  10 =====> Running tsk_Temperature_Controller_Loop
+2021-03-14 01:29:43.11304241438 RUN: TEMP  read_temp_fromSensor   (CDU1_T001,  3.19862E+01)
+2021-03-14 01:29:43.11304284526 RUN: TEMP  exec_temp_conversion   (CDU1_T001,  3.19862E+01,  1.01111E+01)
+2021-03-14 01:29:43.11304320742 RUN: TEMP  write_temp_toActuator  (CDU1_T001,  1.01111E+01)
+2021-03-14 01:29:43.11304354179 RUN: TEMP  display_temp_toMonitor (CDU1_T001,  3.19862E+01)
+
+
+2021-03-14 01:29:43.21404246952 ENDED: main Alhamdulillah 3 times WRY. Execution time:  1.000664371 seconds.
+[2021-03-14 09:29:43] process terminated successfully, elapsed time: 01.20s
+

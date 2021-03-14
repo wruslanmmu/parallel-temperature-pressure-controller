@@ -2,6 +2,7 @@
 
 with Ada.Text_IO; -- use Ada.Text_IO;
 with pkg_controller_data_types;
+with pkg_ada_datetime_stamp;
 
 -- ========================================================
 package body pkg_controller_process_actuations
@@ -11,23 +12,14 @@ is
  
   package ATIO   renames Ada.Text_IO;
   package PCDT   renames pkg_controller_data_types;
-    
-  -- GLOBAL PACKAGE-WIDE VARIABLES
-    
-   -- DEFINE TYPES INSIDE PCDT
-   -- type temp_reading  is new Float   range 10.0..500.0; -- degrees Centigrade
-   -- type press_reading is new Integer range 150..750;    -- millibars
-   -- type flow_reading  is new Float   range 0.0..2500.0; -- metric tons per hour
- 
-   -- type temp_setting   is (ON, OFF);                -- Boolean. Heater ON/OFF
-   -- type press_setting  is new Integer range 0..9;   -- Pressure meter scaling
-   -- type flow_setting   is new Integer range 0..100; -- Percent valve opening
+  package PADTS  renames pkg_ada_datetime_stamp;
    
-
+  -- GLOBAL PACKAGE-WIDE VARIABLES
+ 
 -- ========================================================   
-procedure exec_temp_conversion  (temp_TagID  : in String; TRead : in PCDT.temp_reading; TSet  : out PCDT.temp_setting)
+procedure exec_temp_conversion  (temp_TagID  : in String; TRead : in PCDT.temp_reading;  TSet : out PCDT.temp_setting) 
 -- ======================================================== 
-   is
+is
       temp_value : Float := Float (TRead);
 begin
    -- RECALL: type temp_reading  is new Float   range 10.0..500.0; -- degrees Centigrade  
@@ -47,7 +39,7 @@ begin
       ATIO.Put_Line ("ERROR: TRead is out of float range (10.0 .. 500.0)");  
    end if;   
 
--- PADTS.dtstamp;
+   PADTS.dtstamp;
    ATIO.Put_Line ("RUN: TEMP  exec_temp_conversion   (" & temp_TagID & ", " & 
                        PCDT.temp_reading'Image (TRead) & ", " &
                        PCDT.temp_setting'Image (TSet) & ")" );       
@@ -74,7 +66,7 @@ begin
          ATIO.Put_Line ("ERROR: PRead is out of integer range (0..750)");
       end if;   
 
-   -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: PRESS exec_press_conversion     (" & press_TagID & ", " & 
                        PCDT.press_reading'Image (PRead) & ", " &
                        PCDT.press_setting'Image (PSet) & ")" );         
@@ -101,7 +93,7 @@ begin
       ATIO.Put_Line ("ERROR: FRead is out of float range (1_500.0 .. 2_500.0)");
   end if;       
   
-  -- PADTS.dtstamp;
+     PADTS.dtstamp;
      ATIO.Put_Line ("RUN: FLOW  exec_flow_conversion   (" & flow_TagID & ", " & 
                        PCDT.flow_reading'Image (FRead) & ", " &
                        PCDT.flow_setting'Image (FSet) & ")" );    

@@ -28,17 +28,6 @@ is
    
    -- GLOBAL PACKAGE-WIDE VARIABLES
    
-    -- DEFINE TYPES
-   -- type temp_reading  is new Float   range 10.0..500.0; -- degrees Centigrade
-   -- type press_reading is new Integer range 150..750;    -- millibars
-   -- type flow_reading  is new Float   range 0.0..2500.0; -- metric tons per hour
- 
-   -- type temp_setting   is new Float range 10.0 ..20.0;
-   -- type press_setting  is new Integer range 0..9;   -- Pressure meter scaling
-   -- type flow_setting   is new Integer range 0..100; -- Percent valve opening
-   
-   
-   
    -- =====================================================
    procedure read_temp_fromSensor (temp_TagID: in String; TRead : out PCDT.temp_reading)  
    -- =====================================================
@@ -52,7 +41,7 @@ is
       TRead_Sensor := PARN.get_random_float (10.0, 500.0); -- Random number generator
       TRead := PCDT.temp_reading (TRead_Sensor);
       
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: TEMP  read_temp_fromSensor   (" & temp_TagID & ", " & PCDT.temp_reading'Image (TRead) & ")" );
       
    end read_temp_fromSensor;
@@ -70,7 +59,7 @@ is
       PRead_Sensor := PARN.get_random_integer (150, 750); -- a simulation
       PRead := PCDT.press_reading (PRead_Sensor);
       
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: PRESS read_press_fromSensor     (" & press_TagID & ", " & PCDT.press_reading'Image (PRead) & ")" );
    
    end read_press_fromSensor;
@@ -85,7 +74,7 @@ is
       
    begin
       -- SEND TO TERMINAL SCREEN
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: TEMP  display_temp_toMonitor (" & temp_TagID & ", " & PCDT.temp_reading'Image (TRead) & ")" );
    
    end display_temp_toMonitor;
@@ -101,7 +90,7 @@ is
       -- This is the difference between display_press_toMonitor() and read_press_fromSensor().
       -- DEFINED: type press_reading is new Integer range 150..750;    -- millibars
             
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: PRESS display_press_toMonitor   (" & press_TagID & ", " & PCDT.press_reading'Image (PRead) & ")" );
       
    end display_press_toMonitor;
@@ -120,7 +109,7 @@ is
       FRead_Sensor := PARN.get_random_float (1_500.0, 2_500.0);
       FRead := PCDT.flow_reading (FRead_Sensor);
       
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: FLOW  read_flow_fromSensor   (" & flow_TagID & ", " & PCDT.flow_reading'Image (FRead) & ")" );
       
    end read_flow_fromSensor;
@@ -138,7 +127,7 @@ is
       
       FRead := PCDT.flow_reading (flow_value); -- JUST DUMMY
       
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: FLOW  display_flow_toMonitor (" & flow_TagID & ", " & PCDT.flow_reading'Image (FRead) & ")" );
       
    end display_flow_toMonitor;
@@ -156,7 +145,7 @@ is
       
      --  TSet := PCDT.temp_setting (PCDT.OFF);  -- JUST DUMMY TO HARDWARE
         
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: TEMP  write_temp_toActuator  (" & temp_TagID & ", " & PCDT.temp_setting'Image (TSet) & ")" );
    
    end write_temp_toActuator;
@@ -174,7 +163,7 @@ is
       
       -- PSet := PCDT.press_setting (0); -- JUST DUMMY TO HARDWARE
       
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: PRESS write_pressure_toActuator (" & press_TagID & ", " & PCDT.press_setting'Image (PSet) & ")" );
    
         
@@ -194,7 +183,7 @@ is
       -- FSet := PCDT.flow_setting (0); -- JUST DUMMY TO HARDWARE (Integer)
       
       
-      -- PADTS.dtstamp;
+      PADTS.dtstamp;
       ATIO.Put_Line ("RUN: FLOW  write_flow_toActuator  (" & flow_TagID & ", " & PCDT.flow_setting'Image (FSet) & ")" );
       
    end write_flow_toActuator;

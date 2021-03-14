@@ -18,7 +18,6 @@ with pkg_controller_data_types;
 with pkg_controller_io;
 with pkg_controller_parallel_tasks;
 with pkg_controller_process_actuations;
--- with pkg_controller_processes;
 
 -- ========================================================
 package body pkg_controller_parallel_tasks
@@ -42,7 +41,6 @@ is
    procedure exec_controller_parallel_tasks 
    -- =====================================================
    is
-      
       -- ==================================================
       -- DEFINITIONS - TASKS CODE BEGIN HERE
       -- ==================================================
@@ -50,22 +48,7 @@ is
       task tsk_Pressure_Controller_Loop;
       task tsk_FlowRate_Controller_Loop;
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-     -- ==============================================
+      -- ==============================================
       -- ==================================================
       task body tsk_Temperature_Controller_Loop 
       -- ==================================================
@@ -81,7 +64,7 @@ is
          -- loop                      -- LOOP FOREVER
          for idx in 1..10 loop
             
-            -- PADTS.dtstamp; 
+            PADTS.dtstamp; 
             ATIO.Put_Line ("TASK TEMP  LOOPNO: " & Integer'Image (idx) & " =====> Running tsk_Temperature_Controller_Loop");
             
             -- Temperature sensor inputs simulated using random number generator.
@@ -113,7 +96,7 @@ is
          -- loop                      -- LOOP FOREVER
          for idx in 1..10 loop
             
-             -- PADTS.dtstamp; 
+            PADTS.dtstamp; 
             ATIO.Put_Line ("TASK PRESS LOOPNO: " & Integer'Image (idx) & " =====> Running tsk_Pressure_Controller_Loop"); 
             
            -- Pressure sensor inputs simulated using random number generator. 
@@ -145,7 +128,7 @@ is
          -- loop                      -- LOOP FOREVER
          for idx in 1..10 loop
             
-             -- PADTS.dtstamp; 
+            PADTS.dtstamp; 
             ATIO.Put_Line ("TASK FLOW  LOOPNO: " & Integer'Image (idx) & " =====> Running tsk_FlowRate_Controller_Loop"); 
             
             -- FlowRate sensor inputs simulated using random number generator.
