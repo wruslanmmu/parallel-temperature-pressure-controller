@@ -1,0 +1,89 @@
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 18:50:00.81998369214 STARTED: main Bismillah 3 times WRY
+
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  2.36151E+03)
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  606)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  606)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  606)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  1
+RUN: TEMP read_temp_fromSensor    (CDU1_T001,  2.90215E+02)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1158912044)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  2.36151E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  1
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  274)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  274)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  274)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  2
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  1.82446E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1155796671)
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  508)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  508)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  508)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  3
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  1.82446E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  2
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  281)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  281)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  281)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  4
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  605)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  605)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  605)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  5
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  1.66447E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1154486027)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  1.66447E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  3
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  736)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  736)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  736)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  6
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  279)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  279)
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  1.69565E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1154741472)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  1.69565E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  4
+RUN: PRESS display_press_toMonitor (CDU1_P001,  279)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  7
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  223)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  223)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  223)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  8
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  522)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  522)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  522)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  9
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  1.95691E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1156881657)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  1.95691E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  5
+RUN: PRESS read_press_fromSensor   (CDU1_P001,  401)
+RUN: PRESS write_pressure_toActuator (CDU1 P001,  401)
+RUN: PRESS display_press_toMonitor (CDU1_P001,  401)
+TASK ======> tsk_Pressure_Controller_Loop idx no:  10
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  1.57501E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1153753189)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  1.57501E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  6
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  2.37708E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1158975805)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  2.37708E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  7
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  2.24947E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1158453106)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  2.24947E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  8
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  2.49479E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1159457963)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  2.49479E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  9
+RUN: FLOW: read_flow_fromSensor    (CDU1_F001,  1.84700E+03)
+RUN: FLOW write_flow_toActuator (CDU1 F001,  1155981297)
+RUN: FLOW display_flow_toMonitor  (CDU1_F001,  1.84700E+03)
+TASK ======> tsk_FlowRate_Controller_Loop idx no:  10
+
+
+2021-03-13 18:50:02.81998823663 ENDED: main Alhamdulillah 3 times WRY. Execution time:  2.000495877 seconds.
+[2021-03-14 02:50:02] process terminated successfully, elapsed time: 02.20s
+

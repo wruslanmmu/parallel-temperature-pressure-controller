@@ -1,0 +1,92 @@
+V "GNAT Lib v9"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U pkg_controller_process_actuations%b  pkg_controller_process_actuations.adb  00822a45 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_controller_data_types%s  pkg_controller_data_types.ads  pkg_controller_data_types.ali
+Z system.concat_7%s	s-conca7.adb		s-conca7.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+U pkg_controller_process_actuations%s  pkg_controller_process_actuations.ads  944d3c2a EE NE OO PK IL
+W pkg_controller_data_types%s  pkg_controller_data_types.ads  pkg_controller_data_types.ali
+
+D ada.ads		20200312110721 76789da1 ada%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D pkg_controller_data_types.ads  20210313225839 3983377e pkg_controller_data_types%s
+D pkg_controller_process_actuations.ads  20210313133353 adce0b54 pkg_controller_process_actuations%s
+D pkg_controller_process_actuations.adb  20210314004711 1cd2a535 pkg_controller_process_actuations%b
+D system.ads		20200312110721 4635ec04 system%s
+D s-conca7.ads		20200312110721 fcc75b1f system.concat_7%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-imgint.ads		20200312110721 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20200312110721 c7a851e2 system.img_real%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 12|3r6 12r26
+X 6 a-textio.ads
+49K13*Text_IO 471e16 12|3w10 12r30
+263U14*Put_Line 12|47s12 51s9 74s15 78s12 101s12 105s11
+X 10 pkg_controller_data_types.ads
+11K9*pkg_controller_data_types 34e30 11|9w6 18r26 12|4w6 13r26
+19F9*temp_reading<float> 11|20r79 12|28r75 52r29
+20I9*press_reading<integer> 11|21r79 12|58r75 79r29
+21F9*flow_reading<float> 11|22r79 12|85r75 106r29
+25F9*temp_setting<float> 11|20r111 12|28r106 37r23 39r23 41r23 43r23 45r23
+. 53r29
+26I9*press_setting<integer> 11|21r111 12|58r107 80r29
+27I9*flow_setting<integer> 11|22r111 12|85r106 97r20 99r20 107r29
+X 11 pkg_controller_process_actuations.ads
+13K9*pkg_controller_process_actuations 26l5 26e38 12|7b14 117l5 117t38
+18K12*SPCDT=18:26 20r73 20r105 21r73 21r105 22r73 22r105
+20U14*exec_temp_conversion 20>37 20>62 20<94 12|28b11 55l8 55t28
+20a37 temp_TagID{string} 12|28b34 51r59
+20f62 TRead{10|19F9} 12|28b59 31r36 52r49
+20f94 TSet{10|25F9} 12|28b89 37m10 39m10 41m10 43m10 45m10 53r49
+21U14*exec_press_conversion 21>37 21>62 21<94 12|58b11 82l5 82t26
+21a37 press_TagID{string} 12|58b34 78r65
+21i62 PRead{10|20I9} 12|58b59 65r31 79r50
+21i94 PSet{10|26I9} 12|58b90 68m10 70m10 72m10 80r50
+22U14*exec_flow_conversion 22>37 22>62 22<94 12|85b11 109l5 109t25
+22a37 flow_TagID{string} 12|85b34 105r61
+22f62 FRead{10|21F9} 12|85b59 94r23 106r49
+22i94 FSet{10|27I9} 12|85b89 97m7 99m7 107r49
+X 12 pkg_controller_process_actuations.adb
+12K11 ATIO=12:30 47r7 51r4 74r10 78r7 101r7 105r6
+13K11 PCDT=13:26 28r70 28r101 37r18 39r18 41r18 43r18 45r18 52r24 53r24 58r70
+. 58r102 79r24 80r24 85r70 85r101 97r15 99r15 106r24 107r24
+31f7 temp_value{float} 36r8 36r33 38r11 38r36 40r11 40r36 42r11 42r36 44r11
+. 44r36
+61i7 press_value{integer} 65m7 67r14 67r39 69r14 69r39 71r14 71r39
+88f6 flow_value{float} 94m3 96r10 96r38 98r10 98r38
+

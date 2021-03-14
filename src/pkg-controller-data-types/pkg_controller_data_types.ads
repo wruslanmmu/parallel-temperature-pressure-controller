@@ -20,7 +20,9 @@ is
    type press_reading is new Integer range 150..750;    -- millibars
    type flow_reading  is new Float   range 0.0..2500.0; -- metric tons per hour
  
-   type heater_setting is (ON, OFF);                -- Boolean. Heater ON/OFF
+   -- type temp_setting   is (ON, OFF);       -- PROBLEMATIC         -- Boolean. Heater ON/OFF
+   
+   type temp_setting   is new Float   range 10.0 .. 20.0;
    type press_setting  is new Integer range 0..9;   -- Pressure meter scaling
    type flow_setting   is new Integer range 0..100; -- Percent valve opening
    

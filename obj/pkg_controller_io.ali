@@ -5,7 +5,6 @@ A -march=x86-64
 P ZX
 
 RN
-RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
@@ -13,23 +12,20 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pkg_controller_io%b	pkg_controller_io.adb	5002ecd5 OO PK IL
+U pkg_controller_io%b	pkg_controller_io.adb	f0e19773 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.discrete_random%s
 W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z interfaces%s		interfac.ads		interfac.ali
 W pkg_ada_datetime_stamp%s  pkg_ada_datetime_stamp.adb  pkg_ada_datetime_stamp.ali
 W pkg_ada_random_numbers%s  pkg_ada_random_numbers.adb  pkg_ada_random_numbers.ali
 W pkg_controller_data_types%s  pkg_controller_data_types.ads  pkg_controller_data_types.ali
-Z system%s		system.ads		system.ali
 Z system.concat_5%s	s-conca5.adb		s-conca5.ali
-Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
 Z system.img_int%s	s-imgint.adb		s-imgint.ali
 Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
 
-U pkg_controller_io%s	pkg_controller_io.ads	7fc313d4 EE NE OO PK IL
+U pkg_controller_io%s	pkg_controller_io.ads	2d4af2e5 EE NE OO PK IL
 W pkg_controller_data_types%s  pkg_controller_data_types.ads  pkg_controller_data_types.ali
 
 D ada.ads		20200312110721 76789da1 ada%s
@@ -55,9 +51,9 @@ D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
 D pkg_ada_datetime_stamp.ads  20210311234805 30e90943 pkg_ada_datetime_stamp%s
 D pkg_ada_random_numbers.ads  20210301063901 60ba9a03 pkg_ada_random_numbers%s
-D pkg_controller_data_types.ads  20210313055824 1abd7817 pkg_controller_data_types%s
-D pkg_controller_io.ads	20210313070551 657e6bc3 pkg_controller_io%s
-D pkg_controller_io.adb	20210313071431 c63c298e pkg_controller_io%b
+D pkg_controller_data_types.ads  20210313225839 3983377e pkg_controller_data_types%s
+D pkg_controller_io.ads	20210313221503 14c9c59b pkg_controller_io%s
+D pkg_controller_io.adb	20210314004908 3456b319 pkg_controller_io%b
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -67,7 +63,6 @@ D s-exctab.ads		20200312110721 54135002 system.exception_table%s
 D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
 D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
 D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
-D s-imenne.ads		20200312110721 614c06c0 system.img_enum_new%s
 D s-imgint.ads		20200312110721 02dbe0c2 system.img_int%s
 D s-imgrea.ads		20200312110721 c7a851e2 system.img_real%s
 D s-linux.ads		20200312110721 ed0b8aee system.linux%s
@@ -102,75 +97,63 @@ X 10 a-nuflra.ads
 41K22*Float_Random 74e30 26|10w19
 X 17 a-textio.ads
 49K13*Text_IO 471e16 26|8w10 8r27 24r31
-263U14*Put_Line 26|51s12 68s12 89s12 111s15 115s12 134s12 149s12 166s12 181s12
-. 200s15 204s12
+263U14*Put_Line 26|56s12 74s12 89s12 105s12 124s12 142s12 160s12 178s12 198s12
 X 22 pkg_ada_datetime_stamp.ads
 10K9*pkg_ada_datetime_stamp 26e27 26|13w6 25r27
-21U14*dtstamp 26|50s13 67s13 88s13 114s13 133s13 148s13 165s13 180s13 203s13
 X 23 pkg_ada_random_numbers.ads
 3K9*pkg_ada_random_numbers 33e27 26|14w6 26r27
-9V13*get_random_integer{integer} 26|62s28
-10V13*get_random_float{float} 26|45s28 160s28
+9V13*get_random_integer{integer} 26|70s28
+10V13*get_random_float{float} 26|52s28 120s28
 X 24 pkg_controller_data_types.ads
-11K9*pkg_controller_data_types 32e30 25|9w6 16r26 26|15w6 27r27
-19F9*temp_reading<float> 25|19r89 20r89 26|39r80 48r25 51r81 120r84 130r25
-. 134r81
-20I9*press_reading<integer> 25|24r89 25r89 26|56r84 65r25 68r82 139r85 146r25
-. 149r82
-21F9*flow_reading<float> 25|29r89 30r89 26|154r81 163r25 166r81 171r83 178r25
-. 181r81
-23E9*heater_setting 23e36 25|21r89 26|73r87 89r81
-23n28*ON{23E9} 26|83r31
-23n32*OFF{23E9} 26|85r31
-24I9*press_setting<integer> 25|26r89 26|94r88 115r82
-25I9*flow_setting<integer> 25|31r89 26|186r85 204r81
+11K9*pkg_controller_data_types 34e30 25|9w6 16r26 26|15w6 27r27
+19F9*temp_reading<float> 25|19r82 22r85 26|43r76 53r21 56r87 79r83 89r87
+20I9*press_reading<integer> 25|25r82 28r85 26|61r80 71r21 74r91 94r84 105r91
+21F9*flow_reading<float> 25|31r82 34r85 26|110r77 121r21 124r87 129r82 139r21
+. 142r87
+25F9*temp_setting<float> 25|21r85 26|147r80 160r87
+26I9*press_setting<integer> 25|27r85 26|165r82 178r91
+27I9*flow_setting<integer> 25|33r85 26|184r80 198r87
 X 25 pkg_controller_io.ads
-12K9*pkg_controller_io 34l5 34e22 26|18b14 214l5 214t22
-16K12*PPCDT=16:26 19r83 20r83 21r83 24r83 25r83 26r83 29r83 30r83 31r83 26|56r78
-. 73r81 94r82
-19U14*read_temp_fromSensor 19>39 19<64 26|39b14 53l8 53t28
-19a39 temp_TagID{string} 26|39b36 51r56
-19f64 out_TRead{24|19F9} 26|39b59 48m7 51r101
-20U14*display_temp_toMonitor 20>39 20<64 26|120b14 136l8 136t30
-20a39 temp_TagID{string} 26|120b38 134r56
-20f64 out_TRead{24|19F9} 26|120b63 130m7 134r101
-21U14*write_temp_toActuator 21>39 21<64 26|73b14 91l8 91t29
-21a39 temp_tagID{string} 26|73b37 89r56
-21e64 out_HSetting{24|23E9} 26|73b62 83m10 85m10 89r103
-24U14*read_press_fromSensor 24>39 24<64 26|56b14 70l8 70t29
-24a39 press_TagID{string} 26|56b37 68r56
-24i64 out_PRead{24|20I9} 26|56b62 65m7 68r103
-25U14*display_press_toMonitor 25>39 25<64 26|139b14 151l8 151t31
-25a39 press_TagID{string} 26|139b39 149r56
-25i64 out_PRead{24|20I9} 26|139b64 146m7 149r103
-26U14*write_press_toActuator 26>39 26<64 26|94b14 117l8 117t30
-26a39 press_tagID{string} 26|94b38 115r56
-26i64 out_PSetting{24|24I9} 26|94b63 105m10 107m10 109m10 115r103
-29U14*read_flow_fromSensor 29>39 29<64 26|154b14 168l8 168t28
-29a39 flow_TagID{string} 26|154b36 166r56
-29f64 out_FRead{24|21F9} 26|154b60 163m7 166r101
-30U14*display_flow_toMonitor 30>39 30<64 26|171b14 183l8 183t30
-30a39 flow_TagID{string} 26|171b38 181r56
-30f64 out_FRead{24|21F9} 26|171b62 178m7 181r101
-31U14*write_flow_toActuator 31>39 31<64 26|186b14 206l8 206t29
-31a39 flow_tagID{string} 26|186b37 204r56
-31i64 out_FSetting{24|25I9} 26|186b61 196m10 198m10 204r101
+12K9*pkg_controller_io 37l5 37e22 26|18b14 208l5 208t22
+16K12*PPCDT=16:26 19r76 21r79 22r79 25r76 27r79 28r79 31r76 33r79 34r79 26|61r74
+19U14*read_temp_fromSensor 19>39 19<64 26|43b14 58l8 58t28
+19a39 temp_TagID{string} 26|43b36 56r62
+19f64 TRead{24|19F9} 26|43b59 53m7 56r107
+21U14*write_temp_toActuator 21>39 21=64 26|147b14 162l8 162t29
+21a39 temp_TagID{string} 26|147b37 160r62
+21f64 TSet{24|25F9} 26|147b61 160r107
+22U14*display_temp_toMonitor 22>39 22=64 26|79b14 91l8 91t30
+22a39 temp_TagID{string} 26|79b38 89r62
+22f64 TRead{24|19F9} 26|79b63 89r107
+25U14*read_press_fromSensor 25>39 25<64 26|61b14 76l8 76t29
+25a39 press_TagID{string} 26|61b37 74r65
+25i64 PRead{24|20I9} 26|61b62 71m7 74r112
+27U14*write_press_toActuator 27>39 27=64 26|165b14 181l8 181t30
+27a39 press_TagID{string} 26|165b38 178r65
+27i64 PSet{24|26I9} 26|165b63 178r112
+28U14*display_press_toMonitor 28>39 28=64 26|94b14 107l8 107t31
+28a39 press_TagID{string} 26|94b39 105r65
+28i64 PRead{24|20I9} 26|94b64 105r112
+31U14*read_flow_fromSensor 31>39 31<64 26|110b14 126l8 126t28
+31a39 flow_TagID{string} 26|110b36 124r62
+31f64 FRead{24|21F9} 26|110b60 121m7 124r107
+33U14*write_flow_toActuator 33>39 33=64 26|184b14 200l8 200t29
+33a39 flow_TagID{string} 26|184b37 198r62
+33i64 FSet{24|27I9} 26|184b61 198r107
+34U14*display_flow_toMonitor 34>39 34=64 26|129b14 144l8 144t30
+34a39 flow_TagID{string} 26|129b38 142r62
+34f64 FRead{24|21F9} 26|129b62 132r37 139m7 142r107
 X 26 pkg_controller_io.adb
-24K12 ATIO=24:31 51r7 68r7 89r7 111r10 115r7 134r7 149r7 166r7 181r7 200r10
-. 204r7
-25K12 PADTS=25:27 50r7 67r7 88r7 114r7 133r7 148r7 165r7 180r7 203r7
-26K12 PARN=26:27 45r23 62r23 160r23
-27K12 PCDT=27:27 39r75 48r20 51r76 65r20 68r77 83r26 85r26 89r76 115r77 120r79
-. 130r20 134r76 139r80 146r20 149r77 154r76 163r20 166r76 171r78 178r20 181r76
-. 186r80 204r76
-30f4 TRead_Sensor{float} 45m7 48r39 80r27 128r27
-31i4 PRead_Sensor{integer} 62m7 65r40 102r27 144r27
-32f4 FRead_Sensor{float} 160m7 163r39 176r27 193r27
-34f4 cur_TRead_Sensor{float} 80m7 82r10 128m7 130r39
-35i4 cur_PRead_Sensor{integer} 102m7 104r14 104r44 106r14 106r43 108r14 108r43
-. 144m7 146r40
-36f4 cur_FRead_Sensor{float} 176m7 178r39 193m7 195r14 195r48 197r14 197r47
-X 48 s-stausa.ads
+24K12 ATIO=24:31 56r7 74r7 89r7 105r7 124r7 142r7 160r7 178r7 198r7
+25K12 PADTS=25:27
+26K12 PARN=26:27 52r23 70r23 120r23
+27K12 PCDT=27:27 43r71 53r16 56r82 71r16 74r86 79r78 89r82 94r79 105r86 110r72
+. 121r16 124r82 129r77 139r16 142r82 147r75 160r82 165r77 178r86 184r75 198r82
+46f9 TRead_Sensor{float} 52m7 53r35
+64i10 PRead_Sensor{integer} 70m7 71r36
+113f9 FRead_Sensor{float} 120m7 121r35
+132f8 flow_value{float} 139r35
+X 47 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
 

@@ -6,8 +6,11 @@ b__main_parallel_temp_press_controller.o
 [BOUND OBJECT FILES]
 /home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_datetime_stamp.o
 /home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_random_numbers.o
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_ada_realtime_delays.o
 /home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_data_types.o
 /home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_io.o
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_process_actuations.o
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/pkg_controller_parallel_tasks.o
 /home/wruslan/github-mmu/parallel-temperature-pressure-controller/obj/main_parallel_temp_press_controller.o
 [GENERATED SOURCE FILES]
 b__main_parallel_temp_press_controller.ads

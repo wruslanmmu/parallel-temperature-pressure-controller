@@ -1,0 +1,112 @@
+
+
+===========================================================
+/home/wruslan/github-mmu/parallel-temperature-pressure-controller/exec/main_parallel_temp_press_controller.adx
+2021-03-13 18:10:12.67866386442 STARTED: main Bismillah 3 times WRY
+
+RUN: read_temp_fromSensor    (CDU1_F001,  2.00739E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  32541)
+RUN: display_flow_toMonitor  (CDU1_F001,  2.00739E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  1
+RUN: read_temp_fromSensor    (CDU1_T001,  4.18075E+02)
+RUN: read_press_fromSensor   (CDU1_P001,  319)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  32541)
+RUN: display_press_toMonitor (CDU1_P001,  319)
+======> tsk_Pressure_Controller_Loop idx no:  1
+RUN: read_press_fromSensor   (CDU1_P001,  306)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  306)
+======> tsk_Pressure_Controller_Loop idx no:  2
+RUN: read_temp_fromSensor    (CDU1_F001,  2.38039E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  2.38039E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  2
+RUN: read_press_fromSensor   (CDU1_P001,  727)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  727)
+======> tsk_Pressure_Controller_Loop idx no:  3
+RUN: read_temp_fromSensor    (CDU1_F001,  2.41915E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  2.41915E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  3
+RUN: read_press_fromSensor   (CDU1_P001,  748)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  748)
+======> tsk_Pressure_Controller_Loop idx no:  4
+RUN: read_press_fromSensor   (CDU1_P001,  415)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  415)
+======> tsk_Pressure_Controller_Loop idx no:  5
+RUN: read_temp_fromSensor    (CDU1_F001,  2.06865E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  2.06865E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  4
+RUN: read_press_fromSensor   (CDU1_P001,  633)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  633)
+======> tsk_Pressure_Controller_Loop idx no:  6
+RUN: read_temp_fromSensor    (CDU1_F001,  1.53451E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  1.53451E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  5
+RUN: read_press_fromSensor   (CDU1_P001,  425)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  425)
+======> tsk_Pressure_Controller_Loop idx no:  7
+RUN: read_temp_fromSensor    (CDU1_F001,  2.41653E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  2.41653E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  6
+RUN: read_press_fromSensor   (CDU1_P001,  555)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  555)
+======> tsk_Pressure_Controller_Loop idx no:  8
+RUN: read_temp_fromSensor    (CDU1_F001,  2.18327E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  2.18327E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  7
+RUN: read_press_fromSensor   (CDU1_P001,  547)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  547)
+======> tsk_Pressure_Controller_Loop idx no:  9
+RUN: read_press_fromSensor   (CDU1_P001,  595)
+ERROR: cur_PRead_sensor is out of integer range (0..750)
+RUN: write_pressure_toActuator (CDU1 P001,  22041)
+RUN: display_press_toMonitor (CDU1_P001,  595)
+======> tsk_Pressure_Controller_Loop idx no:  10
+RUN: read_temp_fromSensor    (CDU1_F001,  2.37673E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  2.37673E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  8
+RUN: read_temp_fromSensor    (CDU1_F001,  1.81750E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  1.81750E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  9
+RUN: read_temp_fromSensor    (CDU1_F001,  2.23280E+03)
+ERROR: cur_FRead_sensor out of float range (1_500.0 .. 2_500.0)
+RUN: write_flow_toActuator (CDU1 F001,  22041)
+RUN: display_flow_toMonitor  (CDU1_F001,  2.23280E+03)
+======> tsk_FlowRate_Controller_Loop idx no:  10
+
+
+2021-03-13 18:10:13.08267014160 ENDED: main Alhamdulillah 3 times WRY. Execution time:  0.400677134 seconds.
+[2021-03-14 02:10:13] process terminated successfully, elapsed time: 00.60s
+

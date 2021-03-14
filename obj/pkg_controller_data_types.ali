@@ -9,18 +9,16 @@ RV NO_FLOATING_POINT
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U pkg_controller_data_types%s  pkg_controller_data_types.ads  1abd7817 NE OO PK IL
+U pkg_controller_data_types%s  pkg_controller_data_types.ads  3983377e NE OO PK IL
 
-D pkg_controller_data_types.ads  20210313055824 1abd7817 pkg_controller_data_types%s
+D pkg_controller_data_types.ads  20210313225839 3983377e pkg_controller_data_types%s
 D system.ads		20200312110721 4635ec04 system%s
 X 1 pkg_controller_data_types.ads
-11K9*pkg_controller_data_types 32l5 32e30
+11K9*pkg_controller_data_types 34l5 34e30
 19F9*temp_reading<float>
 20I9*press_reading<integer>
 21F9*flow_reading<float>
-23E9*heater_setting 23e36
-23n28*ON{23E9}
-23n32*OFF{23E9}
-24I9*press_setting<integer>
-25I9*flow_setting<integer>
+25F9*temp_setting<float>
+26I9*press_setting<integer>
+27I9*flow_setting<integer>
 

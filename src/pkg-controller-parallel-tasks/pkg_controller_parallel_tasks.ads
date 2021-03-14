@@ -1,4 +1,4 @@
--- File   : pkg_controller_processes.ads
+-- File   : pkg_controller_parallel_tasks.ads
 -- Date   : Sat 13 Mar 2021 05:41:53 AM +08
 -- Author : wruslandr@gmail.com
 -- Version: 1.0 Sat 13 Mar 2021 05:41:53 AM +08
@@ -8,19 +8,17 @@
 -- IMPORT USER-CREATED ADA PACKAGES
 
 -- ========================================================
-package pkg_controller_processes
+package pkg_controller_parallel_tasks
 -- ======================================================== 
     with SPARK_Mode => on
 is
-   procedure temperature_controller_loop (
-                                  TRead : PCDT.temp_reading;
-                                  HSet  : PCDT.heater_setting);
+   -- NOTE: Prefix S is for being in the spec file .ads 
    
-   procedure pressure_controller_loop (
-                                  PRead : PCDT.temp_reading;
-                                  PSet  : PCDT.press_setting);
-     
+   procedure exec_controller_parallel_tasks;
+                                
+  
+ 
 -- ======================================================== 
-end pkg_controller_processes;
+end pkg_controller_parallel_tasks;
 -- ========================================================
 
